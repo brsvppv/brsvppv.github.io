@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- title of page -->
-    <title>Your Name | Home</title>
-    <link rel="shortcut icon" href="images/pic.png" type="image/png" />
-    <!-- stylesheet link -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- Fontawsome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Borislav Popov - IT Professional & Developer</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <section class="home">̥
-        <div class="container">
-            <!-- place your picture and name here -->
-            <img src="images/pic.png" alt="">
-            <h4>Your Name</h4>
-            <p>shortIntro | shortIntro | shortIntro</p>
-            <div class="icons">
-               <a href="index.html">
-                   <i class="fa fa-home" aria-hidden="true" title="Home"></i>
-               </a>
-               <a href="about.html">
-                   <i class="fa fa-user-circle" aria-hidden="true" title="About Me"></i>
-               </a>
-               <a href="services.html">
-                   <i class="fa fa-wrench" aria-hidden="true" title="Services"></i>
-               </a>
-               <a href="contact.html">
-                   <i class="fa fa-address-book-o" aria-hidden="true" title="Contact Me"></i>
-               </a>
+
+    <header>
+        <h1>Borislav Popov</h1>
+        <p>Microsoft Certified IT Professional | Developer | Hobbyist</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </header>
+
+    <section id="about" class="about">
+        <img src="images/ninja-avatar-02.jpg" alt="Borislav Popov">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Borislav Popov, an IT professional with a strong passion for technology and development. As a
+            Microsoft Certified IT Professional, I specialize in system administration, automation, and cloud
+            technologies. In my spare time, I dive into personal projects that help me broaden my skills, particularly
+            in coding and software engineering. My main focus is on building with Python, Django, and JavaScript, and
+            I'm always exploring new ways to expand my technical expertise.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Usefull-PowerShell</h3>
+                <p>Building a smart home automation system with Home Assistant.</p>
+            </div>
+            <div class="card">
+                <h3>WinSettingsManager</h3>
+                <p>WinSettingsManager user-friendly application designed to streamline the process of program
+                    installation and provide effortless management of Windows settings, leverages the capabilities of
+                    popular package managers such as Winget and Chocolatey.</p>
+            </div>
+            <div class="card">
+                <h3>PLACEHOLDER</h3>
+                <p>Experimenting with AI and machine learning algorithms for personal development.</p>
             </div>
         </div>
     </section>
-    <script src="script/script.js"></script>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or to chat about tech!</p>
+        <a href="mailto:felrogue@gmail.com" class="btn">Send an Email</a>
+    </section>
+
+    <footer>
+        <p>Connect with me:</p>
+        <p>&copy; 2025 Borislav Popov</p>
+    </footer>
+
 </body>
+
 </html>
