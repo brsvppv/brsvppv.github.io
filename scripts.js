@@ -116,3 +116,8 @@ document.addEventListener('DOMContentLoaded', function () {
     sr.reveal('.project-card', { interval: 200 });
     sr.reveal('.contact-container', { origin: 'right' });
 });
+
+document.querySelector('.email-btn')?.addEventListener('click', () => {
+    console.log('Email link clicked');
+    // You could add analytics here if needed
+});
