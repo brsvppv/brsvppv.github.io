@@ -1,19 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Initialize particles if particles.js is loaded
-    if (window.particlesJS) {
-        particlesJS('particles', {
-            // Your existing particles configuration
-            "particles": {
-                // ... keep your existing particles config ...
-            },
-            "interactivity": {
-                // ... keep your existing interactivity config ...
-            },
-            "retina_detect": true
-        });
-    }
+// Debugging initialization
+console.log("Script loaded successfully");
 
-    // Smooth scrolling for anchor links
+document.addEventListener('DOMContentLoaded', function () {
+    console.log("DOM fully loaded");
+
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -25,4 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    // Initialize particles if available
+    if (typeof particlesJS === 'function') {
+        console.log("Initializing particlesJS");
+        particlesJS('particles', {
+            // Your particles config here
+        });
+    } else {
+        console.warn("particlesJS not available");
+    }
 });
