@@ -19,11 +19,14 @@
     --python-blue: #3776ab;
     --js-yellow: #f7df1e;
     --dev-purple: #68217a;
-    --linux-yellow: #fcc624;
+    --linux-yellow: #c99f21;
+    --ubuntu-orange: #E95420;
+    --debian-red: #A81D33;
     --vmware-gray: #607B8B;
     --docker-blue: #2496ED;
     --ad-blue: #0078D4;
     --terraform-purple: #7B42BC;
+
 }
 
 /* Base Styles */
@@ -251,6 +254,14 @@ section {
 
 .fa-linux {
     color: var(--linux-yellow);
+}
+
+.fa-ubuntu {
+    color: var(--ubuntu-orange);
+}
+
+.fa-debian {
+    color: var(--debian-red);
 }
 
 .fa-users-cog {
