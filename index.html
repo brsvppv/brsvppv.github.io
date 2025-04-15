@@ -5,60 +5,199 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borislav Popov - IT Professional & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+    <div class="particles" id="particles"></div>
 
-    <header>
-        <h1>Borislav Popov</h1>
-        <p>Microsoft Certified IT Professional | Developer | Hobbyist</p>
-        <a href="#contact" class="btn">Get in Touch</a>
+    <header class="glass">
+        <div class="header-content">
+            <h1 class="text-gradient">Borislav Popov</h1>
+            <p class="subtitle">Microsoft Certified IT Professional | Hobbyist Developer</p>
+            <div class="social-links">
+                <a href="https://github.com/brsvppv" class="social-icon" title="GitHub Profile"><i
+                        class="fab fa-github"></i></a>
+                <!-- <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a> -->
+            </div>
+            <!-- <a href="#contact" class="btn pulse">Get in Touch <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </header>
 
     <section id="about" class="about">
-        <img src="images/ninja-avatar-02.jpg" alt="Borislav Popov">
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm Borislav Popov, an IT professional with a strong passion for technology and development. As a
-            Microsoft Certified IT Professional, I specialize in system administration, automation, and cloud
-            technologies. In my spare time, I dive into personal projects that help me broaden my skills, particularly
-            in coding and software engineering. My main focus is on building with Python, Django, and JavaScript, and
-            I'm always exploring new ways to expand my technical expertise.
-        </p>
-    </section>
+        <div class="about-content glass">
+            <div class="profile-img-container">
+                <img src="images/borislav-popov.jpg" alt="Borislav Popov" class="profile-img">
+                <div class="tech-icons">
+                    <i class="fab fa-microsoft"></i>
+                    <!-- <i class="fab fa-azure"></i> -->
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2><span class="section-title">About Me</span></h2>
+                <p>
+                    Hi, I'm Borislav Popov, an experienced IT professional with a deep passion for technology and
+                    software
+                    development. As a Microsoft Certified IT Professional, I specialize in cloud infrastructure,
+                    automation, and
+                    system administration.
+                </p>
+                <p>
+                    My expertise includes automating workflows, optimizing IT systems, and implementing scalable
+                    solutions
+                    across cloud and on-premise infrastructures. I'm constantly exploring new technologies to enhance my
+                    skills.
+                </p>
+                <div class="skills">
+                    <span class="skill-tag">Microsoft Entra</span>
+                    <span class="skill-tag">Microsoft Azure</span>
+                    <span class="skill-tag">Power Platform</span>
+                    <span class="skill-tag">Azure DevOps</span>
+                    <span class="skill-tag">Automation</span>
+                    <span class="skill-tag">Virtualization</span>
+                    <span class="skill-tag">PowerShell</span>
+                    <span class="skill-tag">Python / Django</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Windows / Linux</span>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects">
-            <div class="card">
-                <h3>Usefull-PowerShell</h3>
-                <p>Powershell Usefull Function And Scripts.</p>
-            </div>
-            <div class="card">
-                <h3>WinSettingsManager</h3>
-                <p>WinSettingsManager user-friendly application designed to streamline the process of program
-                    installation and provide effortless management of Windows settings, leverages the capabilities of
-                    popular package managers such as Winget and Chocolatey.</p>
-            </div>
-            <div class="card">
-                <h3>PLACEHOLDER</h3>
-                <p>Experimenting with AI and machine learning algorithms for personal development.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or to chat about tech!</p>
-        <a href="mailto:felrogue@gmail.com" class="btn">Send an Email</a>
+    <section id="certifications">
+        <h2><span class="section-title">Certifications</span></h2>
+        <div class="certifications-container">
+            <div class="certification-card glass tilt">
+                <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+                <h3>Microsoft Certified: Azure Administrator Associate</h3>
+                <p>Specialized in managing Azure environments, from virtual machines to networking and storage
+                    solutions.</p>
+                <a href="https://learn.microsoft.com/en-us/certifications/azure-administrator-associate/"
+                    target="_blank" rel="noopener" class="btn btn-small">View Details <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="certification-card glass tilt">
+                <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+                <h3>Microsoft Certified: Power Platform Solution Architect Expert</h3>
+                <p>Expert in designing solutions using Power Platform, with a focus on automation, app development, and
+                    data
+                    integration.</p>
+            </div>
+            <div class="certification-card glass tilt">
+                <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+                <h3>Microsoft Certified: Power Platform Developer Associate</h3>
+                <p>Skilled in developing custom solutions on Power Platform, leveraging Power Apps, Power Automate.</p>
+            </div>
+            <div class="certification-card glass tilt">
+                <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+                <h3>Microsoft Certified: Azure Fundamentals</h3>
+                <p>Foundational knowledge of cloud computing, focusing on Azure services, pricing, and governance.</p>
+            </div>
+            <div class="certification-card glass tilt">
+                <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+                <h3>Microsoft Certified Professional</h3>
+                <p>Comprehensive expertise in IT infrastructure management, including networking, security, and server
+                    administration.</p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>Connect with me:</p>
-        <p>&copy; 2025 Borislav Popov</p>
+    <section id="projects">
+        <h2><span class="section-title">My Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card glass">
+                <div class="project-icon"><i class="fas fa-terminal"></i></div>
+                <h3>Usefull-PowerShell</h3>
+                <p>Building a smart home automation system with Home Assistant.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                </div>
+            </div>
+            <div class="project-card glass">
+                <div class="project-icon"><i class="fas fa-cog"></i></div>
+                <h3>WinSettingsManager</h3>
+                <p>Streamline program installation and Windows settings management using Winget and Chocolatey.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                </div>
+            </div>
+            <div class="project-card glass">
+                <div class="project-icon"><i class="fas fa-robot"></i></div>
+                <h3>AI Experiments</h3>
+                <p>Experimenting with AI and machine learning algorithms for personal development.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2><span class="section-title">Get In Touch</span></h2>
+        <p class="contact-subtitle">Feel free to reach out for collaborations or to chat about tech!</p>
+        <div class="contact-container glass">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-large">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:felrogue@gmail.com">felrogue@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bulgaria</span>
+                </div>
+                <div class="contact-social">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="glass">
+        <div class="footer-content">
+            <div class="footer-logo">BP</div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2025 Borislav Popov. All rights reserved.
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
