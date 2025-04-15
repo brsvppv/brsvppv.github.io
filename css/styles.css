@@ -792,3 +792,89 @@ footer {
     color: var(--primary);
     text-decoration: underline;
 }
+
+/* Google Home Compliance Additions */
+.compliance-badge {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.policy-link {
+    color: #34a853;
+}
+
+.last-updated {
+    margin-bottom: 20px;
+}
+
+.data-flow {
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 3px solid #4285f4;
+}
+
+.data-list,
+.usage-list {
+    padding-left: 20px;
+}
+
+.retention-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.retention-card {
+    padding: 15px;
+}
+
+.security-features {
+    margin: 20px 0;
+}
+
+.security-card {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.prohibited-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.prohibited-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.prohibited-icon {
+    font-size: 2em;
+    color: #ea4335;
+    margin-bottom: 10px;
+}
+
+.contact-card {
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.account-link,
+.email-link {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .retention-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prohibited-items {
+        grid-template-columns: 1fr;
+    }
+}

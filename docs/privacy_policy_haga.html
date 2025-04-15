@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Assistant ↔ Google Assistant Integration Privacy - Borislav Popov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="google-home-policy" content="v2024-compliant">
+    <meta name="google-home-scope" content="personal">
+    <meta name="home-assistant-integration" content="google-assistant">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header class="glass">
+        <div class="header-content">
+            <div class="header-profile">
+                <img src="/images/smart-home-01.jpg" alt="Borislav Popov" class="header-avatar">
+                <h1 class="text-gradient">Home Assistant ↔ Google Assistant Integration</h1>
+                <div class="compliance-badge glass">
+                    <i class="fas fa-check-circle"></i> Complies with <a
+                        href="https://developers.home.google.com/policies?authuser=1#2_smart_home_api_integrations"
+                        class="policy-link">Google
+                        Home Policies</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="privacy-policy" class="privacy-section">
+        <div class="privacy-content glass">
+            <h2><span class="section-title">Personal Use Integration Policy</span></h2>
+            <div class="privacy-text">
+                <p class="last-updated"><strong>Last Updated:</strong> June 2024</p>
+
+                <h3>1. Integration Overview</h3>
+                <div class="data-flow glass">
+                    <p>This <strong>personal integration</strong> connects Home Assistant with Google Assistant for:</p>
+                    <ul class="data-list">
+                        <li><i class="fas fa-robot"></i> Voice control of smart home devices</li>
+                        <li><i class="fas fa-sync-alt"></i> State synchronization between systems</li>
+                        <li><i class="fas fa-home"></i> Household automation management</li>
+                    </ul>
+                    <p><strong>Exclusively for private use with no external access or distribution.</strong></p>
+                </div>
+
+                <h3>2. Data Collection</h3>
+                <div class="data-flow glass">
+                    <h4><i class="fas fa-database"></i> Collected Data</h4>
+                    <ul class="data-list">
+                        <li><i class="fas fa-plug"></i> Device states (on/off, temperature, etc.) from Home Assistant
+                        </li>
+                        <li><i class="fab fa-google"></i> Google Assistant voice command transcripts</li>
+                        <li><i class="fas fa-key"></i> OAuth tokens for authentication between systems</li>
+                        <li><i class="fas fa-network-wired"></i> No personal data collected beyond what's required for
+                            functionality</li>
+                    </ul>
+                </div>
+
+                <h3>3. Data Usage</h3>
+                <div class="data-flow glass">
+                    <h4><i class="fas fa-chart-line"></i> How We Use Data</h4>
+                    <ul class="usage-list">
+                        <li>Enable voice control through Google Assistant</li>
+                        <li>Maintain device state consistency</li>
+                        <li>Provide status feedback in Google Home app</li>
+                    </ul>
+                    <div class="prohibited-items">
+                        <div class="prohibited-card glass">
+                            <div class="prohibited-icon"><i class="fas fa-robot"></i></div>
+                            <p>No AI Training</p>
+                        </div>
+                        <div class="prohibited-card glass">
+                            <div class="prohibited-icon"><i class="fas fa-ad"></i></div>
+                            <p>No Advertising</p>
+                        </div>
+                        <div class="prohibited-card glass">
+                            <div class="prohibited-icon"><i class="fas fa-share-alt"></i></div>
+                            <p>No Third-Party Sharing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>4. Data Retention</h3>
+                <div class="retention-grid">
+                    <div class="retention-card glass">
+                        <h4><i class="fab fa-google"></i> Google Servers</h4>
+                        <p>Automatically deleted after 10 days (Google policy requirement)</p>
+                    </div>
+                    <div class="retention-card glass">
+                        <h4><i class="fas fa-server"></i> Home Assistant</h4>
+                        <p>Retained only during active sessions (<1 day)</p>
+                                <p><small>No persistent storage of Google-related data</small></p>
+                    </div>
+                    <div class="retention-card glass">
+                        <h4><i class="fas fa-user-cog"></i> User Control</h4>
+                        <p>Revoke via <a href="https://myaccount.google.com/permissions" class="account-link">Google
+                                Account</a></p>
+                    </div>
+                </div>
+
+                <h3>5. Security Measures</h3>
+                <div class="security-features">
+                    <div class="security-card glass">
+                        <h4><i class="fas fa-lock"></i> Encryption</h4>
+                        <ul>
+                            <li>HTTPS for all communications</li>
+                            <li>OAuth 2.0 authentication</li>
+                        </ul>
+                    </div>
+                    <div class="security-card glass">
+                        <h4><i class="fas fa-shield-alt"></i> Access Controls</h4>
+                        <ul>
+                            <li>4-digit PIN for security devices</li>
+                            <li>Firewall-protected local network</li>
+                            <li>No inbound internet connections</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>6. Compliance</h3>
+                <div class="contact-card glass">
+                    <p><i class="fas fa-check-circle"></i> This integration complies with:</p>
+                    <ul class="compliance-list">
+                        <li>Google Home Developer Policies</li>
+                        <li>Home Assistant Cloud Terms</li>
+                    </ul>
+                    <p><i class="fas fa-envelope"></i> Contact: <a href="mailto:felrogue@gmail.com"
+                            class="email-link">felrogue@gmail.com</a></p>
+                    <p class="compliance-note"><small>Personal integration only - No data collection beyond configured
+                            smart home devices</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="glass">
+        <div class="footer-content">
+            <div class="footer-logo">BP</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#privacy-policy">Privacy Policy</a>
+                <a href="mailto:felrogue@gmail.com" class="email-link">Contact</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2025 Borislav Popov. Home Assistant ↔ Google Assistant Integration.<br>
+                <small>Personal integration only • Not part of Works with Google Home program</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>
