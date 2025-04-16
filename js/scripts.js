@@ -100,3 +100,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Rest of your existing JavaScript code...
 });
+
+const scrollDownBtn = document.querySelector('.scroll-down');
+
+if (scrollDownBtn) {
+    scrollDownBtn.addEventListener('click', function () {
+        const target = document.querySelector('#about');
+        if (target) {
+            const offsetTop = target.offsetTop;
+
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+}
+
